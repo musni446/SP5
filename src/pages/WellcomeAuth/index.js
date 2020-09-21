@@ -20,7 +20,7 @@ const WellcomeAuth=({navigation}) => {
           justifyContent: "center"
         },
        lanjut: {
-          marginTop:450,
+          marginTop:650,
           marginLeft:240,
         }
       });   

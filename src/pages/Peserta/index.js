@@ -1,17 +1,21 @@
 import React from 'react';
 import {Image,StyleSheet,TextInput,View,ImageBackground,TouchableOpacity} from 'react-native';
+import ActionButtonps from './ActionButtonps';
 
-const Peserta=() => {
+const Peserta=({navigation}) => {
+  const handleGoTo = screen => {
+    navigation.navigate(screen);
+  };
     return(
-        <View style={{ flex: 2}}>
-            <ImageBackground source={require('../admin/3.jpg')} style={styles.image}>
-            <TouchableOpacity style={styles.Menu} title="Wellcome auth" onPress={() => navigation.navigate('Login')}>
-            <TextInput placeholder={"username"} onChangeText={(value)=>this.ListeningStateChangedEvent({username:value})}
-            style={{height:59, width:"80%", left:30, top:20, borderBottomWidth:1}}/>
-            <TextInput placeholder={"Password"} onChangeText={(value)=>this.ListeningStateChangedEvent({username:value})}
-            style={{height:59, width:"80%", left:30, top:40, borderBottomWidth:1}}/>
-            {/* <Image source={require('../src/images/5.png')} style={styles.lanjut2}/> */}
-            </TouchableOpacity>
+        <View style={{ flex: 1}}>
+            <ImageBackground source={require('../WellcomeAuth2/3.png')} style={styles.image}>
+            {/* <TouchableOpacity style={styles.Menu} title="Wellcome auth" onPress={() => navigation.navigate('Login')}> */}
+            <TextInput placeholder={"username"}
+            style={{height:50, width:"90%", left:30, top:120, borderWidth:2, borderColor:'#0ec7e3', borderRadius:10}}/>
+            <TextInput placeholder={"Password"} 
+            style={{height:50, width:"90%", left:30, top:140, borderWidth:2,borderColor:'#0ec7e3', borderRadius:10}}/>
+            <ActionButtonps title="Submit" onPress={() => handleGoTo('Homes')}/>
+            {/* </TouchableOpacity> */}
             </ImageBackground>
         </View>
     );

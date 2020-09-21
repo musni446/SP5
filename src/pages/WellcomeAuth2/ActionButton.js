@@ -5,7 +5,7 @@ import Button from '../../components/atoms/button';
 
 const ActionButton =({onPress, title})=>{
     return(
-    <View style={{marginBottom: 43,maxWidth: 225,marginLeft: 70}}>
+    <View style={{marginBottom: 43,maxWidth: 225,marginLeft: 100}}>
         <Button title={title} onPress={onPress}/>
     </View>
     );

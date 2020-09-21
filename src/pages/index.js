@@ -1,7 +1,21 @@
 import Splash from './splash';
-import admin from './admin';
-import Peserta from './Peserta';
+import Login from './Login';
+import Register from './Register';
 import WellcomeAuth from './WellcomeAuth';
 import WellcomeAuth2 from './WellcomeAuth2';
+import Homes from './Homes';
+import TataTertib from './TataTertib';
+import JadwalKegiatan from './JadwalKegiatan';
+import AbsensiKegiatan from './AbsensiKegiatan';
+import Tahfidz from './Tahfidz';
+import Modul from './Modul';
+import Perizinan from './Perizinan';
+import BeritaTerkini1 from './BeritaTerkini1';
+import BeritaTerkini2 from './BeritaTerkini2';
+import SeputarProgrammer from './SeputarPragrammer';
+import Profil from './Profil';
+import More from './More';
+import Edit from './Edit';
+import AboutUs from './AboutUs';
 
-export {Splash, admin, Peserta, WellcomeAuth, WellcomeAuth2};
+export {Splash, Login, Register, WellcomeAuth, WellcomeAuth2,Homes, TataTertib,JadwalKegiatan, AbsensiKegiatan,Tahfidz,Modul,Perizinan,BeritaTerkini1,BeritaTerkini2,SeputarProgrammer,Profil,More,Edit,AboutUs};

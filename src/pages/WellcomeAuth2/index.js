@@ -10,8 +10,8 @@ const WellcomeAuth2=({navigation}) => {
         <View style={{ flex: 1,
         }}>
             <ImageBackground source={require('../WellcomeAuth2/2.jpg')} style={styles.image}> 
-            <ActionButton title="Admin" onPress={() => handleGoTo('admin')}/>
-            <ActionButton title="Peserta"onPress={() => handleGoTo('Peserta')}/>
+            <ActionButton title="SIGN UP" onPress={() => handleGoTo('admin')}/>
+            <ActionButton title="SIGN IN"onPress={() => handleGoTo('Peserta')}/>
             </ImageBackground>
         </View>
         );

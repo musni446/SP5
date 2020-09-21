@@ -4,7 +4,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 
 
 
-const Button =({title, onPress}) =>{
+const Buttonps =({title, onPress}) =>{
     return (
         <TouchableOpacity 
         style= {{
@@ -26,4 +26,4 @@ const Button =({title, onPress}) =>{
     );
 };
 
-export default Button;
+export default Buttonps;
